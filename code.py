@@ -15,7 +15,7 @@ Learningrate = 1e-6
 Epoch = 1
 #w = [1,1,1]
 w=[random.random(),random.random(),random.random()] 
-while Epoch == 1 or  Epoch < Limit:
+while Epoch == 1 or  Epoch < Limit:   #Learning process begin (below are all derived from pdf)
     for i in range(400):
         for j in range(300):
             a = w[0] * img_k1.getpixel((i,j)) + w[1] * img_k2.getpixel((i,j)) + w[2] * img_i.getpixel((i,j))
@@ -26,7 +26,7 @@ while Epoch == 1 or  Epoch < Limit:
             #print(w[0],w[1],w[2])
     Epoch+=1
 
-for i in range(400):
+for i in range(400): #output is the decryption from the teacher face used by the w we learned
     for j in range(300):
         img_I.putpixel((i,j),int((img_Eprime.getpixel((i,j)) - w[0] * img_k1.getpixel((i,j)) - w[1] * img_k2.getpixel((i,j))) / w[2]
 ))
