@@ -28,6 +28,6 @@ while Epoch == 1 or  Epoch < Limit:
 
 for i in range(400):
     for j in range(300):
-        img_I.putpixel((i,j)) = (image.Eprime.getpixel((i,j)) - (w[0] * img_k1.getpixel((i,j))) - (w[1] * img_k2.getpixel((i,j)))) / w[2]
-
+        img_I.putpixel((i,j),int((img_Eprime.getpixel((i,j)) - w[0] * img_k1.getpixel((i,j)) - w[1] * img_k2.getpixel((i,j))) / w[2]
+))
 img_I.save("output.png")
