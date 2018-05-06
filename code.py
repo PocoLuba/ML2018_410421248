@@ -10,7 +10,7 @@ img_i = Image.open('I.png')
 img_Eprime = Image.open('Eprime.png')
 
 img_I = Image.new("L", (400,300), 0)
-Limit = 2
+Limit = 13
 Learningrate = 1e-6
 Epoch = 1
 #w = [1,1,1]
