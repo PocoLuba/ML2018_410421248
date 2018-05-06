@@ -14,6 +14,7 @@ img_Eprime = Image.open('Eprime.png')
 Limit = 50
 Epoch = 1
 
+
 w = [1,1,1]
 
 while Epoch == 1 or  Epoch < Limit:
