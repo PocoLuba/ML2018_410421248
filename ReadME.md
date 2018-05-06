@@ -8,4 +8,4 @@
 ![Image of E](https://github.com/PocoLuba/ML2018_410421248/blob/master/Eprime.png?raw=true)
 ![Image of I](https://github.com/PocoLuba/ML2018_410421248/blob/master/output.png?raw=true)
 5. E. 我看了題目很久都還看不懂到底要幹嘛，好險有同學在旁邊教導才知道，PIL的用法看了一下才知道怎麼用，最後輸出時要轉成整數忘了轉卡了有點久。
-6. F. PIL的用法，如何將公式轉成程式。
+6. F. PIL的用法，如何將公式轉成程式，尋找最佳w值。
