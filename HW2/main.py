@@ -1,7 +1,7 @@
 import keras
 from keras.datasets import mnist
 from keras.models import Sequential
-from keras.layers import Dense, Dropout
+from keras.layers import Dense, Activation
 from keras.optimizers import RMSprop
 
 (x_train, y_train),(x_test, y_test) = mnist.load_data()  #存取mnist資料
@@ -19,3 +19,13 @@ x_train /= 255 #reducing dimension
 x_test /= 255
 print(x_train.shape)
 print(x_test.shape)
+
+y_train = keras.utils.to_categorical(y_train, 10) # converting class vectors to binary class matrices
+y_test = keras.utils.to_categorical(y_test, 10)
+
+model = Sequential([
+    Dense(32, input_shape=(784,)),
+    Activation('relu'),
+    Dense(10),
+    Activation('softmax'),
+])
